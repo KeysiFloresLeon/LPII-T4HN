@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Saludo con Tymeleaf - Pregunta 3</title>
+	</head>
+	<style>
+		body{margin: auto;}
+		h1{color: blue; text-align: center; font-family: Cambria;}
+		nav{background-color: #FFE699; padding: 10px; border: 1px solid black;}
+		main{background-color: azure; padding: 50px; border: 1px solid black; border-top: 0;}
+		p{font-size: 15pt; text-align: center; font-family: Arial;}
+	</style>
+	<body>
+		<nav>
+			<div>
+				<h1>Instituto CIBERTEC</h1>
+			</div>
+		</nav>
+
+		<main>
+			<div>
+				<p th:text="${mensaje}"></p>
+			</div>
+		</main>
+	</body>
+</html>
