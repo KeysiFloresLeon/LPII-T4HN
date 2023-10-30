@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+	.bg-color{background-color: #92D050;}
+	.table thead tr {background-color: #92D050;}
+</style>
+<body>
+		<header class="bg-color p-5 text-center">
+			<h1>Resultado</h1>
+		</header>
+		<main class="p-5">
+        <table class="table table-bordered text-center">
+            <thead>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Cliente</th>
+                    <th>Teléfono</th>
+                    <th>Distrito</th>
+                    <th>Edad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="cliente : ${clientes}">
+                    <td th:text="${cliente.codigo}"></td>
+                    <td th:text="${cliente.cliente}"></td>
+                    <td th:text="${cliente.telefono}"></td>
+                    <td th:text="${cliente.distrito}"></td>
+                    <td th:text="${cliente.edad}"></td>
+                </tr>
+            </tbody>
+        </table>
+		</main>
+    </div>
+</body>
+</html>
+
+</body>
+</html>
